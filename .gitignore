@@ -1,0 +1,3 @@
+# any PHP files in the secrets directory are secret
+secrets/*.php
+
