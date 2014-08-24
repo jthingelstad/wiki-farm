@@ -65,12 +65,6 @@ define("NS_ISSUE_TALK", 807);
 $wgExtraNamespaces[NS_ISSUE] = "Issue";
 $wgExtraNamespaces[NS_ISSUE_TALK] = "Issue_talk";
 
-# Enable profiling
-$wgProfileToDatabase = true;
-$wgEnableProfileInfo = true;
-
-//$wgDebugLogGroups = array( 'smw-report' => '/srv/www/mediawiki/logs/debug-smw-report-log.txt' );
-
 $wgDefaultSkin = "foreground";
 # Foreground is specific, so lets disable other skins
 $wgSkipSkins = array( 'chick', 'cologneblue', 'modern', 'myskin', 'nostalgia', 'simple', 'standard', 'filament', 'monobook', 'vector' );
@@ -96,4 +90,3 @@ $wgGroupPermissions['bureaucrat']['noanalytics'] = true;
 $wgGoogleAnalyticsAccount = 'UA-49847989-1';
 
 require_once($IP.'/LocalSettings/modules/ga.php');
-

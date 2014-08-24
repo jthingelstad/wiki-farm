@@ -25,18 +25,7 @@ $wgExtraNamespaces[NS_COMPANY] = "Company";
 $wgExtraNamespaces[NS_COMPANY_TALK] = "Company_talk";
 $wgContentNamespaces[] = NS_COMPANY;
 $wgNamespacesToBeSearchedDefault[NS_COMPANY] = true;
-// define("NS_FARM", 802);
-// define("NS_FARM_TALK", 803);
-// $wgExtraNamespaces[NS_FARM] = "Farm";
-// $wgExtraNamespaces[NS_FARM_TALK] = "Farm_talk";
-// $wgContentNamespaces[] = NS_FARM;
-// $wgNamespacesToBeSearchedDefault[NS_FARM] = true;
-// define("NS_SKIN", 804);
-// define("NS_SKIN_TALK", 805);
-// $wgExtraNamespaces[NS_SKIN] = "Skin";
-// $wgExtraNamespaces[NS_SKIN_TALK] = "Skin_talk";
-// $wgContentNamespaces[] = NS_SKIN;
-// $wgNamespacesToBeSearchedDefault[NS_SKIN] = true;
+
 $myWikiApiaryURL = "http://wikiapiary.com/wiki/BODWiki";
 $wgSitemapNamespaces = array(0, 2, 4, 6, 14);
 

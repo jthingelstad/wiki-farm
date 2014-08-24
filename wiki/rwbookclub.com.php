@@ -13,7 +13,6 @@ $myEmailDomain = "rwbookclub.com";
 $wgSitename = "R/W Book Club";
 $wgMetaNamespace = "RW_Book_Club";
 $wgLogo = "/w/images/rwbookclub/3/3e/Rwbookclub_wiki_logo.png";
-$myPiwikIDSite = "3";
 $wgDBname = "mw_rwbookclub";
 $wgDBuser = "mw_rwbookclub";
 $wgDBpassword = $SECRET_DBPASSWORD;
@@ -27,6 +26,7 @@ define("NS_MEETING_TALK", 801);
 $wgExtraNamespaces[NS_MEETING] = "Meeting";
 $wgExtraNamespaces[NS_MEETING_TALK] = "Meeting_talk";
 $wgContentNamespaces[] = NS_MEETING;
+
 $myWikiApiaryURL = "http://wikiapiary.com/wiki/RW_Book_Club";
 $wgSitemapNamespaces = array(0, 2, 4, 6, 14, 800);
 

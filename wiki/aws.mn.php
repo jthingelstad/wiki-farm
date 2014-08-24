@@ -19,10 +19,6 @@ $wgDBpassword = $SECRET_DBPASSWORD;
 $wgSecretKey = $SECRET_SECRETKEY;
 $wgUpgradeKey = $SECRET_UPGRADEKEY;
 
-# Additional namespaces
-# Protect some namespaces
-
-
 $myWikiApiaryURL = "http://wikiapiary.com/wiki/AWS_MN";
 $wgSitemapNamespaces = array(0, 2, 4, 6, 14);
 
