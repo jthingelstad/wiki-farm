@@ -308,7 +308,7 @@ switch ($myInstance) {
         $wgGroupPermissions['*']['createaccount'] = false;
         break;
 
-        case "filament.wikiwonders.net":
+        case "filament.thingelstad.com":
         # Permit only registered users to edit and add users
         $wgGroupPermissions['*']['edit'] = false;
         $wgGroupPermissions['*']['delete'] = false;
@@ -336,6 +336,10 @@ switch ($myInstance) {
         $wgRestrictionLevels[] = 'editors';
         $wgRestrictionLevels[] = 'operators';
 
+	$wgGroupPermissions['user']['move'] = false;
+	$wgGroupPermissions['editor']['move'] = true;
+	$wgGroupPermissions['editor']['suppressredirect'] = true;
+
         # Trusted users
         $wgGroupPermissions['trusted-users']['autopatrol'] = true;
         $wgGroupPermissions['trusted-users']['autoconfirmed'] = true;
@@ -361,8 +365,7 @@ switch ($myInstance) {
         break;
 
         case "wiki.planetkubb.com":
-        case "foreground.wikiwonders.net":
-        case "wikionastick.com":
+        case "foreground.thingelstad.com":
         # Disable anonymous editing
         $wgGroupPermissions['*']['edit'] = false;
 
