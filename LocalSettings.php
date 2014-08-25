@@ -263,7 +263,6 @@ switch ($myInstance) {
 
     $wgShowIPinHeader = false;
     $wgMinimalPasswordLength = 8;
-    $wgLivePasswordStrengthChecks = true;
 
 # Set permissions for the wiki
 # Default case is that anonymous users cannot edit, but can register
