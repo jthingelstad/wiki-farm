@@ -336,9 +336,8 @@ switch ($myInstance) {
         $wgRestrictionLevels[] = 'editors';
         $wgRestrictionLevels[] = 'operators';
 
+	# Regular users
 	$wgGroupPermissions['user']['move'] = false;
-	$wgGroupPermissions['editor']['move'] = true;
-	$wgGroupPermissions['editor']['suppressredirect'] = true;
 
         # Trusted users
         $wgGroupPermissions['trusted-users']['autopatrol'] = true;
@@ -352,6 +351,8 @@ switch ($myInstance) {
         $wgGroupPermissions['editors']['editors'] = true;
         $wgGroupPermissions['editors']['replacetext'] = true;
         $wgGroupPermissions['editors']['delete'] = true;
+       	$wgGroupPermissions['editors']['move'] = true;
+	$wgGroupPermissions['editors']['suppressredirect'] = true;
 
         # Setup operator group
         $wgGroupPermissions['operators']['autopatrol'] = true;
