@@ -27,6 +27,17 @@ $wgExtraNamespaces[NS_SANDBOX] = "Sandbox";
 $wgExtraNamespaces[NS_SANDBOX_TALK] = "Sandbox_talk";
 
 $wgDefaultSkin = "foreground";
+$wgForegroundFeatures = array(
+  #'navbarIcon' => true,
+  'showActionsForAnon' => true,
+  'NavWrapperType' => 'divonly',
+  'showHelpUnderTools' => true,
+  'showRecentChangesUnderTools' => true,
+  'IeEdgeCode' => 1,
+  'showFooterIcons' => true,
+  #'addThisFollowPUBID' => 'ra-5407bddd55dceeb5'
+);
+
 $wgSkipSkins = array( 'chick', 'cologneblue', 'modern', 'myskin', 'nostalgia', 'simple', 'standard', 'filament', 'monobook', 'vector' );
 
 # GA stuff

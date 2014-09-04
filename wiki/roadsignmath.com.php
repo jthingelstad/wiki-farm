@@ -24,6 +24,17 @@ $myWikiApiaryURL = "http://wikiapiary.com/wiki/Road_Sign_Math";
 $wgSitemapNamespaces = array(0, 2, 4, 6, 14);
 
 $wgDefaultSkin = "foreground";
+$wgForegroundFeatures = array(
+  'navbarIcon' => true,
+  'showActionsForAnon' => true,
+  'NavWrapperType' => 'divonly',
+  'showHelpUnderTools' => true,
+  'showRecentChangesUnderTools' => true,
+  'IeEdgeCode' => 1,
+  'showFooterIcons' => true,
+  #'addThisFollowPUBID' => 'ra-5407bddd55dceeb5'
+);
+
 $wgSkipSkins = array( 'chick', 'cologneblue', 'modern', 'myskin', 'nostalgia', 'simple', 'standard', 'filament', 'monobook', 'vector' );
 
 # GA stuff

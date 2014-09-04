@@ -79,6 +79,7 @@ function lfTOSLink( $sk, &$tpl ) {
 }
 
 $wgForegroundFeatures = array(
+  'navbarIcon' => true,
   'showActionsForAnon' => true,
   'NavWrapperType' => 'divonly',
   'showHelpUnderTools' => true,

@@ -24,6 +24,16 @@ $wgSitemapNamespaces = array(0, 2, 4, 6, 14);
 
 # Use Foreground skin
 $wgDefaultSkin = "foreground";
+$wgForegroundFeatures = array(
+  #'navbarIcon' => true,
+  'showActionsForAnon' => true,
+  'NavWrapperType' => 'divonly',
+  'showHelpUnderTools' => true,
+  'showRecentChangesUnderTools' => true,
+  'IeEdgeCode' => 1,
+  'showFooterIcons' => true
+);
+
 $wgSkipSkins = array( 'chick', 'cologneblue', 'modern', 'myskin', 'nostalgia', 'simple', 'standard', 'filament', 'monobook', 'vector' );
 
 # GA stuff
