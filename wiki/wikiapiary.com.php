@@ -78,6 +78,16 @@ function lfTOSLink( $sk, &$tpl ) {
     return true;
 }
 
+$wgForegroundFeatures = array(
+  'showActionsForAnon' => true,
+  'NavWrapperType' => 'divonly',
+  'showHelpUnderTools' => true,
+  'showRecentChangesUnderTools' => true,
+  'IeEdgeCode' => 1,
+  'showFooterIcons' => true,
+  'addThisFollowPUBID' => 'ra-5407bddd55dceeb5'
+);
+
 # Enable translation
 $wgGroupPermissions['user']['translate'] = true;
 $wgTranslateFuzzyBotName = 'Fuzzy Bee';
