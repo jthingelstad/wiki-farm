@@ -32,6 +32,7 @@ $wgDefaultSkin = "vector";
 $wgVectorUseIconWatch = true;
 $wgSkipSkins = array( 'nostalgia', 'simple' );
 $wgAllowUserCss = true;
+$wgAllowUserJs = true;
 
 # Uncommnent this is Mediawiki is crashing and you need a stack trace
 $wgShowExceptionDetails = true;
