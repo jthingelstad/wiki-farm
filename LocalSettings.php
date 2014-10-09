@@ -560,9 +560,6 @@ if ( !$myClosedWiki) {
     require_once("$IP/extensions/ConfirmEdit/QuestyCaptcha.php");
     $wgCaptchaClass = 'QuestyCaptcha';
     # Set questions for Questy
-    #$wgCaptchaQuestions[] = array( 'question' => "What is this wiki's name?", 'answer' => "$wgSitename" );
-    #$wgCaptchaQuestions[] = array ( 'question' => "What day of the week is it at <a href='http://google.com/search?q=gmt+time'>Greenwich Mean Time</a> (GMT) right now?", 'answer' => gmdate("l") );
-    #$wgCaptchaQuestions[] = array ( 'question' => "In 24-hour format, what hour is it in <a href='http://google.com/search?q=gmt+time'>Greenwich Mean Time</a> (GMT) right now?", 'answer' => gmdate("G") );
     $myChallengeString = substr(md5(uniqid(mt_rand(), true)), 0, 8);
     $myChallengeIndex = rand(0, 7) + 1;
     $myChallengePositions = array ('fi<!-- blah -->rst', 'sec<!-- blah -->ond', 't<!-- blah -->hird', 'four<!-- blah -->th', 'f<!-- blah -->ifth', 'sixt<!-- blah -->h', 'seve<!-- blah -->nth', 'ei<!-- blah -->ghth');
