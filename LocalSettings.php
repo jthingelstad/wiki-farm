@@ -200,6 +200,8 @@ $wgShellLocale = "en_US.utf8";
 # http://www.mediawiki.org/wiki/Extension:Math
 require_once("$IP/extensions/Math/Math.php");
 $wgUseMathJax = true;
+$wgDefaultUserOptions['math'] = MW_MATH_MATHJAX; // setting MathJax as default rendering option (optional)
+
 #'/srv/www/mediawiki/public_html/w/extensions/Math/math/texvc';
 
 ## Set $wgCacheDirectory to a writable directory on the web server
@@ -422,6 +424,7 @@ $smwgQueryProfiler = array(
 switch ($myInstance) {
     case "rwbookclub.com":
     $smwgNamespacesWithSemanticLinks[NS_MEETING] = true;
+    $smwgQEqualitySupport = SMW_EQ_NONE;
     break;
 
     case "wikiapiary.com":
