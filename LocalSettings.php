@@ -562,12 +562,35 @@ if ( !$myClosedWiki) {
     require_once( "$IP/extensions/ConfirmEdit/ConfirmEdit.php" );
     require_once("$IP/extensions/ConfirmEdit/QuestyCaptcha.php");
     $wgCaptchaClass = 'QuestyCaptcha';
-    # Set questions for Questy
-    $myChallengeString = substr(md5(uniqid(mt_rand(), true)), 0, 8);
-    $myChallengeIndex = rand(0, 7) + 1;
-    $myChallengePositions = array ('fi<!-- blah -->rst', 'sec<!-- blah -->ond', 't<!-- blah -->hird', 'four<!-- blah -->th', 'f<!-- blah -->ifth', 'sixt<!-- blah -->h', 'seve<!-- blah -->nth', 'ei<!-- blah -->ghth');
+
+    # Set number question for questy
+    # sudo pear install channel://pear.php.net/Numbers_Words-0.16.2
+    # http://pear.php.net/package-info.php?package=Numbers_Words 
+    require_once("Numbers/Words.php");
+
+    $myChallengeNumber = rand(0, 899999999) + 100000000;
+    $myChallengeString = (string)$myChallengeNumber;
+    $myChallengeStringLong = Numbers_Words::toWords($myChallengeNumber);
+    $myChallengeIndex = rand(0, 8) + 1;
+
+    $myChallengePositions = array (
+        'first',
+        'second',
+        'third',
+        'fourth',
+        'fifth',
+        'sixth',
+        'seventh',
+        'eighth',
+        'ninth'
+    );
     $myChallengePositionName = $myChallengePositions[$myChallengeIndex - 1];
-    $wgCaptchaQuestions[] = array ( 'question' => "Please provide the $myChallengePositionName character from the sequence <code>$myChallengeString</code>:", 'answer' => $myChallengeString[$myChallengeIndex - 1] );
+
+    $wgCaptchaQuestions[] = array (
+        'question' => "What is the $myChallengePositionName digit of the number <strong>$myChallengeStringLong</strong>?",
+        'answer' => $myChallengeString[$myChallengeIndex - 1]
+    );
+
     # $wgCaptchaQuestions[] = array( 'question' => "", 'answer' => "" );
     # Skip CAPTCHA for people who have confirmed emails
     $wgGroupPermissions['emailconfirmed']['skipcaptcha'] = true;
