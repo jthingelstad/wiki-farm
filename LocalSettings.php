@@ -418,6 +418,7 @@ $smwgRSSWithPages = false; # In RSS feeds only display the link, don't encode th
 $smwgAdminRefreshStore = false; # Do not allow a refresh to be requested via the web interface
 $smwgPageSpecialProperties[] = '_CDAT';
 $smwgPageSpecialProperties[] = '_LEDT';
+$smwgQUpperbound = 30000;
 $smwgQueryProfiler = array(
     'smwgQueryDurationEnabled' => true,
     );
