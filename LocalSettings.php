@@ -33,6 +33,7 @@ $wgVectorUseIconWatch = true;
 $wgSkipSkins = array( 'nostalgia', 'simple' );
 $wgAllowUserCss = true;
 $wgAllowUserJs = true;
+$wgAllowSiteCSSOnRestrictedPages = true;
 
 # Uncommnent this is Mediawiki is crashing and you need a stack trace
 $wgShowExceptionDetails = true;
@@ -571,7 +572,8 @@ if ( !$myClosedWiki) {
 
     $myChallengeNumber = rand(0, 899999999) + 100000000;
     $myChallengeString = (string)$myChallengeNumber;
-    $myChallengeStringLong = Numbers_Words::toWords($myChallengeNumber);
+    $num_words = new Numbers_Words();
+    $myChallengeStringLong = $num_words->toWords($myChallengeNumber);
     $myChallengeIndex = rand(0, 8) + 1;
 
     $myChallengePositions = array (
