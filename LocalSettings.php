@@ -302,8 +302,6 @@ switch ($myInstance) {
         case "scrapbook.thingelstad.com":
         # You must be registered to even see this wiki, private
         $wgGroupPermissions['*']['read'] = false;
-        case "links.thingelstad.com":
-        case "links.patrickrhone.com":
         case "wiki.thingelstad.com":
         # Permit only registered users to edit and add users
         $wgGroupPermissions['*']['edit'] = false;
@@ -420,6 +418,7 @@ $smwgAdminRefreshStore = false; # Do not allow a refresh to be requested via the
 $smwgPageSpecialProperties[] = '_CDAT';
 $smwgPageSpecialProperties[] = '_LEDT';
 $smwgQUpperbound = 30000;
+$smwgQMaxLimit = 30000;
 $smwgQueryProfiler = array(
     'smwgQueryDurationEnabled' => true,
     );
@@ -458,10 +457,6 @@ switch ($myInstance) {
     case "wiki.minnestar.org":
     $sfgAutoCreateUser = 'Minnebot';
     $smwgNamespacesWithSemanticLinks[NS_BOARD] = true;
-    break;
-
-    case "links.thingelstad.com":
-    $smwgQMaxInlineLimit = 10000;
     break;
 
 }
