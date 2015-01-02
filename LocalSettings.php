@@ -30,14 +30,13 @@ $wgSQLMode = null;
 
 $wgDefaultSkin = "vector";
 $wgVectorUseIconWatch = true;
-$wgSkipSkins = array( 'nostalgia', 'simple' );
 $wgAllowUserCss = true;
 $wgAllowUserJs = true;
 $wgAllowSiteCSSOnRestrictedPages = true;
 
 # Uncommnent this is Mediawiki is crashing and you need a stack trace
 $wgShowExceptionDetails = true;
-#$wgShowSQLErrors = true;
+$wgShowSQLErrors = true;
 #$wgDebugToolbar = true;
 #$wgDebugLogFile = "/srv/www/mediawiki/tmp/debug-log";
 #$wgDebugDumpSql = True;
@@ -65,7 +64,7 @@ if (file_exists ($my_config) && file_exists($my_secrets)) {
 }
 
 # Skin specific extensions
-require_once($IP.'/extensions/Vector/Vector.php');
+require_once "$IP/skins/Vector/Vector.php";
 if ( $wgDefaultSkin == 'filament' ) {
     require_once($IP.'/skins/filament/filament.php');
 }
@@ -702,7 +701,7 @@ $wgFooterIcons['servedby']['mariadb'] = array(
 # If a WikiApiary URL is set, add it to the footer
 if (isset($myWikiApiaryURL)) {
     $wgFooterIcons['monitoredby']['wikiapiary'] = array(
-        "src" => "http://wikiapiary.com/w/images/wikiapiary/b/b4/Monitored_by_WikiApiary.png",
+        "src" => "https://wikiapiary.com/w/images/wikiapiary/b/b4/Monitored_by_WikiApiary.png",
         "url" => "$myWikiApiaryURL?pk_campaign=FooterIcon&pk_kwd=$myInstance",
         "alt" => "Monitored by WikiApiary"
         );
