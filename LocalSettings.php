@@ -96,9 +96,9 @@ $wgMiserMode = true;
 # consider just setting $wgNoFollowLinks to false
 $wgNoFollowDomainExceptions = array( 'roadsignmath.com',
    'mediawiki.org', 'semantic-mediawiki.org', 'wikiquote.org',
-   'wikipedia.org', 'wiktionary.org', 'thingelstad.com', 'jjt.me',
-   'creativecommons.org', 'flickr.com', 'eff.org', 'pinboard.in',
-   'wikinosh.com' );
+   'wikipedia.org', 'wiktionary.org', 'thingelstad.com',
+   'creativecommons.org', 'flickr.com', 'eff.org', 'pinboard.in'
+   );
 
 # Enable subpages
 # User namespace and all talk namespaces are enabled by default
@@ -181,8 +181,6 @@ if ($myLocalTime) {
 switch ($myInstance) {
     case "wiki.planetkubb.com":
     case "roadsignmath.com":
-    case "wikinosh.com":
-    case "bodwiki.com":
     $wgUseInstantCommons = true;
     break;
     default:
@@ -239,9 +237,9 @@ switch ($myInstance) {
         case "wiki.minnestar.org":
         # $wgEnableCreativeCommonsRdf = true;
         $wgRightsPage = ""; # Set to the title of a wiki page that describes your license/copyright
-        $wgRightsUrl  = "http://creativecommons.org/licenses/by-nc/3.0/us/";
+        $wgRightsUrl  = "https://creativecommons.org/licenses/by-nc/3.0/us/";
         $wgRightsText = "Creative Commons Attribution-NonCommercial 3.0 United States License";
-        $wgRightsIcon = "http://i.creativecommons.org/l/by-nc/3.0/us/88x31.png";
+        $wgRightsIcon = "https://i.creativecommons.org/l/by-nc/3.0/us/88x31.png";
         # $wgRightsCode = ""; # Not yet used
         # If using CC we need to include this extension. This was moved out
         # of core in 1.18.0
@@ -252,7 +250,7 @@ switch ($myInstance) {
         # Default is CC-BY_SA
         # $wgEnableCreativeCommonsRdf = true;
         $wgRightsPage = ""; # Set to the title of a wiki page that describes your license/copyright
-        $wgRightsUrl  = "http://creativecommons.org/licenses/by-sa/3.0/";
+        $wgRightsUrl  = "https://creativecommons.org/licenses/by-sa/3.0/";
         $wgRightsText = "Creative Commons Attribution Share Alike";
         $wgRightsIcon = "{$wgStylePath}/common/images/cc-by-sa.png";
         # $wgRightsCode = ""; # Not yet used
@@ -689,7 +687,7 @@ require_once("$IP/extensions/MagicNoCache/MagicNoCache.php");
 
 $wgFooterIcons['servedby']['linode'] = array(
     "src" => "/served-by-linode.png",
-    "url" => "http://www.linode.com/?r=d246dc8e9e305eefce68376a1a7a0b3e73dfa992",
+    "url" => "https://www.linode.com/?r=d246dc8e9e305eefce68376a1a7a0b3e73dfa992",
     "alt" => "Served by Linode",
     );
 $wgFooterIcons['servedby']['mariadb'] = array(
