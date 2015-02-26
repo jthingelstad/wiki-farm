@@ -436,6 +436,32 @@ switch ($myInstance) {
     $smwgNamespacesWithSemanticLinks[NS_ISSUE] = true;
     $smwgNamespacesWithSemanticLinks[NS_GENERATOR] = true;
     $smwgNamespacesWithSemanticLinks[NS_HOST] = true;
+    
+    # Set Semantic Tags configuration
+    $GLOBALS['smtgFallbackUseForMultipleProperties'] = true;
+    $GLOBALS['smtgTagsContentPropertySelector'] = array(
+	// Standard meta tags
+	'keywords' => 'Has tag',
+	'description' => array('Has description', 'Has tagline'),
+	'author' => 'Page author',
+
+	// Twitter Cards
+	'twitter:title' => 'Has name',
+	'twitter:image' => 'Has image URL',
+	'twitter:description' => array('Has description', 'Has tagline'),
+
+	// Open Graph protocol supported tags
+	'og:title' => 'Has name',
+	'og:image' => 'Has image URL',
+	'og:description' => array('Has description', 'Has tagline'),
+    );
+
+    $GLOBALS['smtgTagsStaticContentDescriptor'] = array(
+	// Static tags
+	'twitter:card' => 'summary',
+	'twitter:site' => '@WikiApiary',
+	'og:site_name' => 'WikiApiary'
+    );
     break;
 
     case "bodwiki.com":
