@@ -57,8 +57,16 @@ $wgContentNamespaces[] = NS_HOST;
 $wgNamespacesToBeSearchedDefault[NS_HOST] = true;
 $wgNamespacesWithSubpages[NS_HOST] = true;
 
+define("NS_LIBRARY", 812);
+define("NS_LIBRARY_TALK", 813);
+$wgExtraNamespaces[NS_LIBRARY] = "Library";
+$wgExtraNamespaces[NS_LIBRARY_TALK] = "Library_talk";
+$wgContentNamespaces[] = NS_LIBRARY;
+$wgNamespacesToBeSearchedDefault[NS_LIBRARY] = true;
+$wgNamespacesWithSubpages[NS_LIBRARY] = true;
+
 $myWikiApiaryURL = "http://wikiapiary.com/wiki/WikiApiary";
-$wgSitemapNamespaces = array(0, 2, 4, 6, 14, 800, 802, 804, 808, 810);
+$wgSitemapNamespaces = array(0, 2, 4, 6, 14, 800, 802, 804, 808, 810, 812);
 
 # Create namespace for issue tracking
 define("NS_ISSUE", 806);

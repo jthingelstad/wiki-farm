@@ -436,6 +436,7 @@ switch ($myInstance) {
     $smwgNamespacesWithSemanticLinks[NS_ISSUE] = true;
     $smwgNamespacesWithSemanticLinks[NS_GENERATOR] = true;
     $smwgNamespacesWithSemanticLinks[NS_HOST] = true;
+    $smwgNamespacesWithSemanticLinks[NS_LIBRARY] = true;
     
     # Set Semantic Tags configuration
     $GLOBALS['smtgFallbackUseForMultipleProperties'] = true;
