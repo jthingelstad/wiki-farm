@@ -439,8 +439,8 @@ switch ($myInstance) {
     $smwgNamespacesWithSemanticLinks[NS_LIBRARY] = true;
     
     # Set Semantic Tags configuration
-    $GLOBALS['smtgFallbackUseForMultipleProperties'] = true;
-    $GLOBALS['smtgTagsContentPropertySelector'] = array(
+    $GLOBALS['smtgTagsPropertyFallbackUsage'] = true;
+    $GLOBALS['smtgTagsProperties'] = array(
 	// Standard meta tags
 	'keywords' => 'Has tag',
 	'description' => array('Has description', 'Has tagline'),
@@ -457,7 +457,7 @@ switch ($myInstance) {
 	'og:description' => array('Has description', 'Has tagline'),
     );
 
-    $GLOBALS['smtgTagsStaticContentDescriptor'] = array(
+    $GLOBALS['smtgTagsStrings'] = array(
 	// Static tags
 	'twitter:card' => 'summary',
 	'twitter:site' => '@WikiApiary',
