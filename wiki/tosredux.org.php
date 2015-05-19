@@ -30,6 +30,14 @@ $wgExtraNamespaces[NS_ORGANIZATION_TALK] = "Organization_talk";
 $wgContentNamespaces[] = NS_ORGANIZATION;
 $wgNamespacesToBeSearchedDefault[NS_ORGANIZATION] = true;
 
+# Create additional namespaces
+define("NS_TOPIC", 802);
+define("NS_TOPIC_TALK", 803);
+$wgExtraNamespaces[NS_TOPIC] = "Topic";
+$wgExtraNamespaces[NS_TOPIC_TALK] = "Topic_talk";
+$wgContentNamespaces[] = NS_TOPIC;
+$wgNamespacesToBeSearchedDefault[NS_TOPIC] = true;
+
 # Use Foreground skin
 $wgDefaultSkin = "foreground";
 $wgForegroundFeatures = array(

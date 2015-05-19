@@ -467,6 +467,7 @@ switch ($myInstance) {
 
     case "tosredux.org":
     $smwgNamespacesWithSemanticLinks[NS_ORGANIZATION] = true;
+    $smwgNamespacesWithSemanticLinks[NS_TOPIC] = true;
     break;
 
     case "bodwiki.com":
