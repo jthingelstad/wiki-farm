@@ -437,7 +437,7 @@ switch ($myInstance) {
     $smwgNamespacesWithSemanticLinks[NS_GENERATOR] = true;
     $smwgNamespacesWithSemanticLinks[NS_HOST] = true;
     $smwgNamespacesWithSemanticLinks[NS_LIBRARY] = true;
-    
+
     # Set Semantic Tags configuration
     $GLOBALS['smtgTagsPropertyFallbackUsage'] = true;
     $GLOBALS['smtgTagsProperties'] = array(
@@ -463,6 +463,10 @@ switch ($myInstance) {
 	'twitter:site' => '@WikiApiary',
 	'og:site_name' => 'WikiApiary'
     );
+    break;
+
+    case "tosredux.org":
+    $smwgNamespacesWithSemanticLinks[NS_ORGANIZATION] = true;
     break;
 
     case "bodwiki.com":
