@@ -8,7 +8,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgObjectCaches['redis'] = array(
   'class'                => 'RedisBagOStuff',
   'servers'              => array( '192.168.189.13:6379' )
-  );
+);
 
 # Set defaults for all wikis
 $wgScriptPath = "/w";
@@ -133,14 +133,14 @@ $wgEnableParserCache = true;
 $wgParserCacheExpireTime = 60 * 60;
 
 # Job queue in redis
-/*  # Commenting out as this seems not ready for prime time yet.
+/*
 $wgJobTypeConf['default'] = array(
   'class'          => 'JobQueueRedis',
   'redisServer'    => '192.168.189.13:6379',
   'redisConfig'    => array(),
   'claimTTL'       => 3600
 );
-*/
+ */
 
 ## To enable image uploads, make sure the 'images' directory
 ## is writable, then set this to true:
@@ -421,6 +421,7 @@ $smwgQMaxLimit = 30000;
 $smwgQueryProfiler = array(
     'smwgQueryDurationEnabled' => true,
     );
+$smwgBlobCacheType = 'redis';
 switch ($myInstance) {
     case "rwbookclub.com":
     $smwgNamespacesWithSemanticLinks[NS_MEETING] = true;
