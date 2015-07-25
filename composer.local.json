@@ -1,0 +1,20 @@
+{
+    "minimum-stability": "dev",
+    "require": {
+	"mediawiki/semantic-media-wiki": "@dev",
+        "mediawiki/maps": "@dev",
+        "mediawiki/semantic-maps": "@dev",
+        "mediawiki/semantic-result-formats": "@dev",
+        "mediawiki/sub-page-list": "@dev",
+        "mediawiki/validator": "@dev",
+        "mediawiki/semantic-extra-special-properties": "@dev",
+        "mustangostang/spyc": "@dev",
+        "mediawiki/parser-hooks": "@dev",
+        "mediawiki/sub-page-list": "@dev",
+        "mediawiki/semantic-forms": "~2.8@dev",
+        "mediawiki/graph-viz": "dev-master",
+        "mediawiki/image-map": "dev-master",
+	"mediawiki/semantic-cite": "dev-master",
+	"mediawiki/semantic-meta-tags": "dev-master"
+    }
+}
