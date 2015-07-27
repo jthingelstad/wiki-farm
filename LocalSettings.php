@@ -421,7 +421,7 @@ $smwgQMaxLimit = 30000;
 $smwgQueryProfiler = array(
     'smwgQueryDurationEnabled' => true,
     );
-$smwgBlobCacheType = 'redis';
+$smwgValueLookupCacheType = 'redis';
 switch ($myInstance) {
     case "rwbookclub.com":
     $smwgNamespacesWithSemanticLinks[NS_MEETING] = true;
