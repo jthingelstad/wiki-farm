@@ -421,7 +421,8 @@ $smwgQMaxLimit = 30000;
 $smwgQueryProfiler = array(
     'smwgQueryDurationEnabled' => true,
     );
-$smwgValueLookupCacheType = 'redis';
+# TODO: Commenting this out, seems to put too much stress on redis and cause it to crash
+#$smwgValueLookupCacheType = 'redis';
 switch ($myInstance) {
     case "rwbookclub.com":
     $smwgNamespacesWithSemanticLinks[NS_MEETING] = true;
@@ -434,7 +435,7 @@ switch ($myInstance) {
     $smwgNamespacesWithSemanticLinks[NS_EXTENSION] = true;
     $smwgNamespacesWithSemanticLinks[NS_FARM] = true;
     $smwgNamespacesWithSemanticLinks[NS_SKIN] = true;
-    $smwgNamespacesWithSemanticLinks[NS_ISSUE] = true;
+    #$smwgNamespacesWithSemanticLinks[NS_ISSUE] = true;
     $smwgNamespacesWithSemanticLinks[NS_GENERATOR] = true;
     $smwgNamespacesWithSemanticLinks[NS_HOST] = true;
     $smwgNamespacesWithSemanticLinks[NS_LIBRARY] = true;
@@ -471,11 +472,6 @@ switch ($myInstance) {
     $smwgNamespacesWithSemanticLinks[NS_TOPIC] = true;
     break;
 
-    case "bodwiki.com":
-    $smwgNamespacesWithSemanticLinks[NS_COMPANY] = true;
-    $smwgNamespacesWithSemanticLinks[NS_ISSUE] = true;
-    break;
-
     case "wiki.planetkubb.com":
     $sfgAutoCreateUser = 'KubbBot';
     $smwgNamespacesWithSemanticLinks[NS_PLAYER] = true;
@@ -483,7 +479,7 @@ switch ($myInstance) {
     $smwgNamespacesWithSemanticLinks[NS_GAME] = true;
     $smwgNamespacesWithSemanticLinks[NS_CLUB] = true;
     $smwgNamespacesWithSemanticLinks[NS_EVENT] = true;
-    $smwgNamespacesWithSemanticLinks[NS_ISSUE] = true;
+    #$smwgNamespacesWithSemanticLinks[NS_ISSUE] = true;
     break;
 
     case "wiki.minnestar.org":

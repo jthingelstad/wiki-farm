@@ -69,10 +69,10 @@ $myWikiApiaryURL = "http://wikiapiary.com/wiki/WikiApiary";
 $wgSitemapNamespaces = array(0, 2, 4, 6, 14, 800, 802, 804, 808, 810, 812);
 
 # Create namespace for issue tracking
-define("NS_ISSUE", 806);
-define("NS_ISSUE_TALK", 807);
-$wgExtraNamespaces[NS_ISSUE] = "Issue";
-$wgExtraNamespaces[NS_ISSUE_TALK] = "Issue_talk";
+#define("NS_ISSUE", 806);
+#define("NS_ISSUE_TALK", 807);
+#$wgExtraNamespaces[NS_ISSUE] = "Issue";
+#$wgExtraNamespaces[NS_ISSUE_TALK] = "Issue_talk";
 
 $wgDefaultSkin = "foreground";
 # Foreground is specific, so lets disable other skins
@@ -94,8 +94,7 @@ $wgForegroundFeatures = array(
   'showHelpUnderTools' => true,
   'showRecentChangesUnderTools' => true,
   'IeEdgeCode' => 1,
-  'showFooterIcons' => true,
-  'addThisFollowPUBID' => 'ra-5407bddd55dceeb5'
+  'showFooterIcons' => true
 );
 
 # Enable translation
@@ -103,10 +102,10 @@ $wgGroupPermissions['user']['translate'] = true;
 $wgTranslateFuzzyBotName = 'Fuzzy Bee';
 
 # GA stuff
-$wgGroupPermissions['*']['noanalytics'] = false;
-$wgGroupPermissions['bot']['noanalytics'] = true;
-$wgGroupPermissions['sysop']['noanalytics'] = true;
-$wgGroupPermissions['bureaucrat']['noanalytics'] = true;
-$wgGoogleAnalyticsAccount = 'UA-49847989-1';
+# $wgGroupPermissions['*']['noanalytics'] = false;
+# $wgGroupPermissions['bot']['noanalytics'] = true;
+# $wgGroupPermissions['sysop']['noanalytics'] = true;
+# $wgGroupPermissions['bureaucrat']['noanalytics'] = true;
+# $wgGoogleAnalyticsAccount = 'UA-49847989-1';
 
-require_once($IP.'/LocalSettings/modules/ga.php');
+# require_once($IP.'/LocalSettings/modules/ga.php');

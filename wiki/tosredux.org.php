@@ -52,12 +52,3 @@ $wgForegroundFeatures = array(
 
 $wgSkipSkins = array( 'chick', 'cologneblue', 'modern', 'myskin', 'nostalgia', 'simple', 'standard', 'filament', 'monobook', 'vector' );
 
-# GA stuff
-#$wgGroupPermissions['*']['noanalytics'] = false;
-#$wgGroupPermissions['bot']['noanalytics'] = true;
-#$wgGroupPermissions['sysop']['noanalytics'] = true;
-#$wgGroupPermissions['bureaucrat']['noanalytics'] = true;
-#$wgGoogleAnalyticsAccount = 'UA-49944629-12';
-
-#require_once($IP.'/LocalSettings/modules/ga.php');
-

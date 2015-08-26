@@ -69,8 +69,7 @@ $wgForegroundFeatures = array(
   'showHelpUnderTools' => true,
   'showRecentChangesUnderTools' => true,
   'IeEdgeCode' => 1,
-  'showFooterIcons' => true,
-  #'addThisFollowPUBID' => 'ra-5407bddd55dceeb5'
+  'showFooterIcons' => true
 );
 
 $wgSkipSkins = array( 'chick', 'cologneblue', 'modern', 'myskin', 'nostalgia', 'simple', 'standard', 'filament', 'monobook', 'vector' );

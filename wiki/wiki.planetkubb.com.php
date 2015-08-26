@@ -61,10 +61,10 @@ $myWikiApiaryURL = "http://wikiapiary.com/wiki/Planet_Kubb_Wiki";
 $wgSitemapNamespaces = array(0, 2, 4, 6, 14, 820, 822, 824, 826, 828);
 
 # Create namespace for issue tracking
-define("NS_ISSUE", 890);
-define("NS_ISSUE_TALK", 891);
-$wgExtraNamespaces[NS_ISSUE] = "Issue";
-$wgExtraNamespaces[NS_ISSUE_TALK] = "Issue_talk";
+#define("NS_ISSUE", 890);
+#define("NS_ISSUE_TALK", 891);
+#$wgExtraNamespaces[NS_ISSUE] = "Issue";
+#$wgExtraNamespaces[NS_ISSUE_TALK] = "Issue_talk";
 
 # Allow cross-site AJAX for Kubb scoring app
 $wgCrossSiteAJAXdomains = array( 'grv.me', '*.grv.me', '*.wikipedia.org' );
